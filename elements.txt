@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<div style="background-color: rgb(71, 165, 42); color: azure; border: 2px solid black;"> <strong>HTML</strong><br>
+        The HyperText Markup Language or HTML is the standard markup language for documents designed to be 
+        displayed in a web browser.It defines the meaning and structure of web content. 
+        It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as 
+        JavaScript.</div>-->
+
+    <!--<figure>
+        <img src="html.png">
+        <figcaption>The HyperText Markup Language or HTML is the standard markup language for documents designed to be 
+            displayed in a web browser.It defines the meaning and structure of web content. 
+            It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as 
+            JavaScript.</figcaption>
+    </figure>-->
+
+    <!--<p><b><i>The <u><h5>HyperText Markup Language</h5></u> or HTML is the standard markup language for documents designed to be 
+        displayed in a<u><h4>web browser</h4></u>.It defines the meaning and structure of web content. 
+        It is often assisted by technologies such as<u><h3> Cascading Style Sheets and scripting languages</h3></u> such as 
+        JavaScript.</i></b></p>-->
+
+    <!--<section>The HyperText Markup Language or <mark>HTML</mark> is the standard markup language for documents designed to be 
+        displayed in a web browser.It defines the meaning and structure of web content. 
+        It is often assisted by technologies such as<mark>Cascading Style Sheets and scripting languages</mark> such as 
+        JavaScript.<section>I am priyadarshani Pisal.i live in baramati.i was free for about t2 month and then 
+        i started think,i should join some IT related classes.</section><section>
+        i completed my BE in IT.i currentently taking classes in <mark>seedInfotech</mark>,in FJD.</section></section>-->
+    
+    <!--<article><u><b>Fresh water</b></u><br>There is no physical substance humans require more than freshwater: without water we can only 
+        survive a few hellish days. While pollution and overuse has threatened many of the world’s drinking
+        water sources, <del>nature has an old-fashioned solution,</del> at least, to pollution. Healthy freshwater 
+        ecosystems—watersheds, wetlands, and forests—naturally clean pollution and toxins from water. Soils, 
+        microorganisms, and plant roots all play a role in filtering and recycling out pollutants with a price 
+        far cheaper than building a water filtration plant. According to research, the more biodiverse the 
+        ecosystem, the faster and more efficiently water is purified.</article>
+        <article><u><b>Pollination</b></u><br>Imagine trying to pollinate every apple blossom in an orchard: this is what nature does for 
+        us. Insects, <del>birds, and even some mammals,</del> pollinate the world’s plants, including much of human 
+        agriculture. Around 80% of the world’s plants require a different species to act as pollinator.
+        </article><article><u><b>Pet control</b></u><br>A recent study found that bats save US agriculture billions of dollars a year simply
+         by doing what they do naturally: <del>eating insects,</del> many of which are potentially harmful to US crops</article>-->
+
+    <!--<div style="background-color: aquamarine; color: darkblue;"><article><u><b>Fresh water</b></u><br>There is no physical substance humans require more than freshwater: without water we can only 
+        survive a few hellish days. While pollution and overuse has threatened many of the world’s drinking
+        water sources, <del>nature has an old-fashioned solution,</del> at least, to pollution. Healthy freshwater 
+        ecosystems—watersheds, wetlands, and forests—naturally clean pollution and toxins from water. Soils, 
+        microorganisms, and plant roots all play a role in filtering and recycling out pollutants with a price 
+        far cheaper than building a water filtration plant. According to research, the more biodiverse the 
+        ecosystem, the faster and more efficiently water is purified.</article>
+        <article><u><b>Pollination</b></u><br>Imagine trying to pollinate every apple blossom in an orchard: this is what nature does for 
+        us. Insects, <del>birds, and even some mammals,</del> pollinate the world’s plants, including much of human 
+        agriculture. Around 80% of the world’s plants require a different species to act as pollinator.
+        </article><article><u><b>Pet control</b></u><br>A recent study found that bats save US agriculture billions of dollars a year simply
+        by doing what they do naturally: <del>eating insects,</del> many of which are potentially harmful to US crops</article></div>-->
+    
+       <!-- <div style="background-color: aquamarine; color: darkblue;"><article><u><b>Fresh water</b></u><br>There is no physical substance humans require more than freshwater: without water we can only 
+            survive a few hellish days. While pollution and overuse has threatened many of the world’s drinking
+            water sources, <del>nature has an old-fashioned solution,</del> at least, to pollution. Healthy freshwater 
+            ecosystems—watersheds, wetlands, and forests—naturally clean pollution and toxins from water. Soils, 
+            microorganisms, and plant roots all play a role in filtering and recycling out pollutants with a price 
+            far cheaper than building a water filtration plant. According to research, the more biodiverse the 
+            ecosystem, the faster and more efficiently water is purified.</article></div><hr>
+            <div style="background-color: black; color: rgb(214, 214, 221);"><article><u><b>Pollination</b></u><br>Imagine trying to pollinate every apple blossom in an orchard: this is what nature does for 
+            us. Insects, <del>birds, and even some mammals,</del> pollinate the world’s plants, including much of human 
+            agriculture. Around 80% of the world’s plants require a different species to act as pollinator.
+            </article></div><hr>
+            <div style="background-color: rgb(87, 1, 104); color: rgb(236, 236, 248);"><article><u><b>Pet control</b></u><br>A recent study found that bats save US agriculture billions of dollars a year simply
+            by doing what they do naturally: <del>eating insects,</del> many of which are potentially harmful to US crops</article></div>-->
+
+        <span  style="text-align: center; background-color: aquamarine; color:darkgoldenrod; border: 4px solid black;">hello </span> <hr>
+        <!-- <span style="color: rgb(23, 119, 31); text-align:left;">It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as 
+            JavaScript.</span> -->
+        <span style="text-align: center; font-family: cursive; font-size: larger; text-align: right;">world </span>
+</body>
+</html>

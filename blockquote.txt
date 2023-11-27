@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blockquote</title>
+</head>
+<body>
+    <!----<blockquote><cite>introduction</cite><br> 
+    I am priyadarshani Pisal.i live in baramati. 
+    i completed my BE in IT.i currentently taking classes in seedInfotech,in FJD.</blockquote>----->
+
+    <!---<p><b><i>I am priyadarshani Pisal.i live in baramati.i was free for about t2 month and then i started think,i should join some IT related classes. 
+        i completed my BE in IT.i currentently taking classes in seedInfotech,in FJD.</i></b></p>---->
+
+    <!-- <tt><h1>INTRO</h1><br>I am priyadarshani Pisal.i live in baramati.i was free for about t2 month and then i started think,i should join some IT related classes. 
+            i completed my BE in IT.i currentently taking classes in seedInfotech,in FJD.</tt>--->
+    
+    <!--<p><h1>INTRO</h1><br><u>I am priyadarshani Pisal. </u>i live in baramati.i was free for about t2 month and then i started think,i should join some IT related classes. 
+        i completed my BE in IT.i currentently taking classes in<mark>seedInfotech,in FJD.</mark></p>--->
+    
+    <!--<abbr title="Hypertext Markup language">HTML</abbr>
+    <hr>--->
+    <!--<address>seedInfotech,<br> hadpasar,<br>pune.</address>
+    <hr>--->
+    <!--<p>I am priyadarshani Pisal.<del>i live in baramati.</del>i was free for about t2 month and then i started think,i should join some IT related classes. 
+        i completed my BE in IT.i currentently taking classes in seedInfotech,in FJD.</p>--->
+
+    <!---<code># include<stdio.h><br>
+          int main{<br>
+            printf("hello world");<br>
+            }<br>
+          return 0;
+    </code>
+---->
+</body>
+</html>

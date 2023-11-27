@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heding</title>
+</head>
+<body>
+<h1 align="center">Hello</h1>
+   <P><h1 align="right"><i>I am priyadarshani Pisal.</i></h1>
+    <h2>i live in baramati.</h2>
+    <h3> i completed my BE in IT.</h3>
+    <hr>
+    <h4> i currentently taking classes in seedInfotech,</h4>
+    <h5>in FJD.</h5></p>
+</body>
+</html>

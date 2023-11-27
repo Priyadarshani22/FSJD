@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <form action="html1.png" method="post" style="background-color: bisque;">
+        <label name="Fname"><b> First name:</b></label>
+        <input type="text" name="Fname"><br><br>
+        <label name="Mname"><b> Middle name:</b></label>
+        <input type="text" name="Mname"><br><br>
+        <label name="Lname"> <b>Last name:</b></label>
+        <input type="text" name="Lname"><br><br><br>
+
+        <label ><b> Course:</b></label>
+        <select name="Course">
+            <option value="BE">BE</option>
+            <option value="BSC">BSC</option>
+            <option value="BCOM">BCOM</option>
+            <option value="CS">CS</option>
+            <option value="MSC">MSC</option>
+        </select><br><br>
+
+        <label name="Gender"><b> Gender:</b></label><br>
+        <input type="radio" name="Gender" value="female">female<br>
+        <input type="radio" name="Gender" value="male">male<br>
+        <input type="radio" name="Gender" value="other">other<br><br><br>
+
+        <label> <b> Phone : </b></label>  
+            <input type="text" value="+91" size="2"/>   
+            <input type="text" name="phone" size="10"/> <br> <br>  
+        
+        <label><b> Address:</b></label><br><br>
+        <textarea name="text" rows="6" cols="100"></textarea><br><br><br>
+
+        <label name="email"> <b>Email:</b></label>
+        <input type="email" name="email"><br><br>
+        
+        <label name="pass"> <b>Password:</b></label>
+        <input type="password" name="pass"><br><br>
+
+        <label name="re-pass"> <b>Retype Password:</b></label>
+        <input type="password" name="re-pass"><br><br><br>
+
+        <input type="submit" name="submit" value="submit"> <br> 
+    </fieldset>      
+    </form>
+</body>
+</html>
