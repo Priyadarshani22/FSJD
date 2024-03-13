@@ -1,0 +1,443 @@
+package com.collabration;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class FirstServlet
+ */
+@WebServlet("/FirstServlet")
+public class FirstServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public FirstServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().println("FIRSTSERVLET:Get");
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		response.getWriter().println("Username:"+user+"Password:"+Pass);
+		
+//		response.sendRedirect("SecondServlet");
+		request.getRequestDispatcher("SecondServlet").include(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().println("FIRSTSERVLET:POST");
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		response.getWriter().println("Username:"+user+"Password:"+Pass);
+		
+//		response.sendRedirect("SecondServlet");
+		request.getRequestDispatcher("SecondServlet").include(request, response);
+	}
+
+}
+
+
+
+package com.collabration;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class SecondServlet
+ */
+@WebServlet("/SecondServlet")
+public class SecondServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SecondServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().println("SECONDSERVLET:POST");
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		response.getWriter().println("Username:"+user+"Password:"+Pass);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().println("SECONDSERVLET:POST");
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		response.getWriter().println("Username:"+user+"Password:"+Pass);
+	}
+
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="FirstServlet" method="post">
+    username: <input type="text" name="username"/> <br/>
+    Password: <input type="password" name="password"/> <br/>
+    <input type="submit" value="Login" />
+</body>
+</html>
+
+
+package com.servletFile;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class HelloServlet
+ */
+@WebServlet(urlPatterns={"/HelloServlet"})
+public class HelloServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public HelloServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().println("hello world:Get");
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		response.getWriter().println("Username:"+user+"Password:"+Pass);
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().println("hello world:Post");
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		response.getWriter().println("Username:"+user+"Password:"+Pass);
+	}
+
+}
+
+
+package com.servletFile;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.jasper.tagplugins.jstl.core.Out;
+
+/**
+ * Servlet implementation class Login
+ */
+@WebServlet("/login")
+public class Login extends HttpServlet {
+ 
+    protected void doPost(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
+         
+      
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+         
+        System.out.println("username: " + username);
+        System.out.println("password: " + password);
+ 
+        
+        PrintWriter writer = response.getWriter();
+        writer.print(username);
+        writer.println(password);
+    }
+ 
+}
+
+
+package com.servletFile;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class MyServlet1
+ */
+@WebServlet("/MyServlet1")
+public class MyServlet1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public MyServlet1() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		super.init();
+	}
+
+	
+	public void destroy(){
+		// TODO Auto-generated method stub
+		super.destroy();
+	}
+
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="HelloServlet">click</a>
+	<form action="HelloServlet" method="post" >
+	<input type="text" name="username">
+	<input type="password" name="password">
+	<input type="submit" value="Click">
+	</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="HelloServlet">click</a>
+	<form action="HelloServlet" method="post" >
+	<input type="text" name="username">
+	<input type="password" name="password">
+	<input type="submit" value="Click">
+	</form>
+</body>
+</html>
+
+
+
+package com.servletFile;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class MyServlet1
+ */
+@WebServlet("/MyServlet1")
+public class MyServlet1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public MyServlet1() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		super.init();
+	}
+
+	
+	public void destroy(){
+		// TODO Auto-generated method stub
+		super.destroy();
+	}
+
+}
+
+
+package com.seed;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class AcountServlet
+ */
+@WebServlet("/AcountServlet")
+public class AcountServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AcountServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session=request.getSession(false);
+		
+		if(session!=null){
+		response.getWriter().println("your account balance : 10 billion");
+		response.getWriter().println(session.getId());
+		session.setMaxInactiveInterval(5);
+	}else{
+		response.getWriter().println("unathorised acces: please login to continue");
+	}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session=request.getSession(false);
+		
+		if(session!=null){
+		response.getWriter().println("your account balance : 10 billion");
+		response.getWriter().println(session.getId());
+		session.setMaxInactiveInterval(5);
+	}else{
+		response.getWriter().println("unathorised acces: please login to continue");
+	}
+	}
+
+}
+
+
+package com.seed;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class LoginServlet
+ */
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public LoginServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		
+		if(user.equals("pp")&& Pass.equals("pp")){
+			HttpSession session =request.getSession(true);
+			
+			response.sendRedirect("AcountServlet");
+		}else{
+			response.getWriter().println("invalid username/password");
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String user=request.getParameter("username");
+		String Pass=request.getParameter("password");
+		
+		if(user.equals("pp")&& Pass.equals("pp")){
+			HttpSession session =request.getSession(true);
+			
+			response.sendRedirect("AcountServlet");
+		}else{
+			response.getWriter().println("invalid username/password");
+		}
+	}
+
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="LoginServlet" method="post">
+    username: <input type="text" name="username"/> <br/>
+    Password: <input type="password" name="password"/> <br/>
+    <input type="submit" value="Login" />
+</body>
+</html>
+
